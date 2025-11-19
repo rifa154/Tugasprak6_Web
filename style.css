@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.header {
+    background-color: #00FF00; /* hijau */
+    font-weight: bold;
+}
+
+.kolom-bilangan {
+    background-color: #00FF00; /* hijau */
+    font-weight: bold;
+}
+
+.kuning {
+    background-color: #FFFF00; /* kuning */
+}
+
+.biru {
+    background-color: #00E4FF; /* biru muda */
+}
