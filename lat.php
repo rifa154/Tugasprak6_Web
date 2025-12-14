@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Tabel Perkalian</title>
+    <meta charset="UTF-8">
+    <title>Latihan Perulangan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>1) Bilangan genap dari 1 sampai 10</h2>
-<?php
-for ($i = 1; $i <= 10; $i++) {
-    if ($i % 2 == 0) echo $i . " ";
-}
-?>
+<!-- ================== NOMOR 1 ================== -->
+<h2>1. Bilangan Genap dari 1 sampai 10</h2>
 
-<h2>2) Tabel Perkalian 1–10</h2>
+<div class="genap-box">
+    <?php
+    for ($i = 1; $i <= 10; $i++) {
+        if ($i % 2 == 0) {
+            echo "<span>$i</span>";
+        }
+    }
+    ?>
+</div>
+
+<hr>
+
+<!-- ================== NOMOR 2 ================== -->
+<h2>2. Tabel Perkalian 1 – 10</h2>
 
 <table>
     <tr>
-        <th class="header">Bilangan</th>
+        <th class="header">bilangan</th>
         <?php
         for ($i = 1; $i <= 10; $i++) {
             echo "<th class='header'>$i</th>";
@@ -26,20 +36,13 @@ for ($i = 1; $i <= 10; $i++) {
     </tr>
 
     <?php
-    for ($baris = 1; $baris <= 10; $baris++) {
+    for ($i = 1; $i <= 10; $i++) {
         echo "<tr>";
+        echo "<th class='header'>$i</th>";
 
-        echo "<td class='kolom-bilangan'>$baris</td>";
-
-        for ($kolom = 1; $kolom <= 10; $kolom++) {
-            $hasil = $baris * $kolom;
-
-            if ($baris == 1) {
-                $kelas = "kuning";
-            } else {
-                $kelas = "biru";
-            }
-
+        for ($j = 1; $j <= 10; $j++) {
+            $hasil = $i * $j;
+            $kelas = ($hasil % 2 == 1) ? "ganjil" : "genap";
             echo "<td class='$kelas'>$hasil</td>";
         }
 

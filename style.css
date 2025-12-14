@@ -1,27 +1,76 @@
-table {
-    border-collapse: collapse;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-table, td, th {
-    border: 1px solid black;
-    padding: 8px;
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 2px solid black;
+    width: 60px;
+    height: 45px;
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.genap-box {
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+}
+
+.genap-box span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 2px solid black;
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .header {
-    background-color: #00FF00; /* hijau */
-    font-weight: bold;
+    background-color: #00ff00;
 }
 
-.kolom-bilangan {
-    background-color: #00FF00; /* hijau */
-    font-weight: bold;
+.genap {
+    background-color: #66ffff;
 }
 
-.kuning {
-    background-color: #FFFF00; /* kuning */
+.ganjil {
+    background-color: #ffff66;
 }
 
-.biru {
-    background-color: #00E4FF; /* biru muda */
+
+.header {
+    background-color: #00ff00; /* hijau */
+}
+
+.genap {
+    background-color: #66ffff; /* biru muda */
+}
+
+.ganjil {
+    background-color: #ffff66; /* kuning */
 }
